@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description"><i>Thank you for taking the time to help us improve this class</i></p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <div class="forms">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" class="forminput" placeholder="Enter your name" required>
+            </div>
+            <div class="forms">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" class="forminput" placeholder="Enter your email" required>
+            </div>
+            <div class="forms">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" class="forminput" placeholder="Enter your age" required min="10"
+                    max="99">
+            </div>
+            <div class="forms">
+                <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+                <select id="dropdown" class="forminput" name="role">
+                    <option disabled selected>Select current role</option>
+                    <option value="Student">Student</option>
+                    <option value="Full Time Job">Full Time Job</option>
+                    <option value="Full Time Learner">Full Time Learner</option>
+                    <option value="prefer not to say">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="forms">
+                <p>What is your gender?</p>
+                <label for="radiomale"><input type="radio" id="radiomale" name="gender" value="male" checked
+                        class="radioinput"> Male</label>
+                <label for="radiofemale"><input type="radio" id="radiofemale" name="gender" value="female"
+                        class="radioinput">
+                    Female</label>
+            </div>
+            <div class="forms">
+                <p>Which of the following Genres music is your favorite. Please check all that apply.</p>
+                <label for="checkjazz"><input type="checkbox" name="checkbox" value="jazz" id="checkjazz"
+                        class="checkboxinput">Jazz</label>
+                <label for="checkpop"><input type="checkbox" name="checkbox" value="pop" id="checkpop"
+                        class="checkboxinput">Pop</label>
+                <label for="checkrock"><input type="checkbox" name="checkbox" value="rock" id="checkrock"
+                        class="checkboxinput">Rock</label>
+                <label for="checkmetal"><input type="checkbox" name="checkbox" value="metal" id="checkmetal"
+                        class="checkboxinput">Metal</label>
+            </div>
+            <div class="forms">
+                <label for="comments">Why you like the music and the genre that you choose before?</label>
+                <textarea id="comments" name="comment" class="textinput"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="forms">
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
